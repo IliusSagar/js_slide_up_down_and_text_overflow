@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideupdown</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <style>
+    
+
+a:hover {
+  color: #222;
+  border-bottom: 2px solid #ff0066;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+title {
+  padding: 4px 6px;
+  color: #fff;
+  background-color: #222;
+}
+
+#thing, #otherthing {
+  padding: 4px 6px;
+  text-align: center;
+  background-color: #ffcbc8;
+  border: 2px solid #222;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: none;
+}
+
+#thing {
+  margin: 10px;
+}
+
+#otherthing {
+  padding: 20px;
+  display: none;
+  margin: 10px;
+  font-family: 'calibri';
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+#next-thing, #next-thing-2 {
+  padding: 4px 6px;
+  text-align: center;
+  background-color: #ffcbc8;
+  border: 2px solid #222;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: none;
+}
+
+#next-thing {
+  margin: 10px;
+
+}
+
+#next-thing-2 {
+  padding: 20px;
+  display: none;
+  margin: 10px;
+  font-family: 'calibri';
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+#final-thing, #final-thing-2 {
+  padding: 4px 6px;
+  text-align: center;
+  background-color: #ffcbc8;
+  border: 2px solid #222;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: none;
+}
+
+#final-thing {
+  margin: 10px;
+}
+
+#final-thing-2 {
+  padding: 20px;
+  margin: 10px;
+  font-family: 'calibri';
+  text-transform: lowercase;
+  letter-spacing: 1px; }
+
+#credit {border: 1px solid #ffcbc8; text-align: center; font-style: italic;}
+
+#links { text-align: center; border: 1px solid #ffcbc8}
+
+p{
+  font-family: 'karla';
+  color: #222;
+}
+    </style>
+</head>
+<body>
+
+    <div id="otherthing">this is how it looks like in the end, cool right? You can close it by clicking the div id 'thing'!</div>
+
+    <div id="thing">this is a toggle</div>
+
+
+
+
+  <script>
+    $(document).ready(function(){
+  $("#thing").click(function(){
+    $("#otherthing").slideToggle("slow");
+    
+ 
+  });
+  
+
+});
+  </script>
+    
+</body>
+</html>
